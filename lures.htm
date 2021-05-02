@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <!-- 
+    *****************************************************************************
+    Title: Turville's Fishing and Tackle
+    Use: This is the homepage for Turville's fishing and tackle
+    Author: Matthew Turville
+    School/Term: Southern Illinois University, Spring 2021
+    Developed: April 19th, 2020
+    Tested: , 2021; Passed on Safari and Chrome browsers.
+    ******************************************************************************
+    -->
+       <link rel="stylesheet" href="">
+        <meta charset="utf-8">
+        <title>Turville's fishing and Tackle</title>
+          <meta charset="utf-8">
+        <meta name="description" content="The Turville's fishing and tackle website is a great place to learn and shop for outstanding lures.">
+        <meta name="keywords" content="fishng, lures, bass, walleye, bluegill, fishing poles">
+        <!--favicon image-->
+		<link rel="shortcut icon" href="Favicon.png"> <!--This is my Favicon-->
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="slicknav.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    	<script src="jquery.slicknav.min.js"></script>
+     <script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    	</script>
+       <!--allows screen to size with devices-->
+       <meta name="viewport" content="width=device-width, intial-scale=1">
+       
+    </head>
+    <body>
+       
+        <div class="top">
+        <img src="Favicon.png" width="10%">
+        <h1>Turville's Fishing and Tackle</h1>
+                <nav id="mobilemenu"></nav>
+             <nav id="nav_menu">
+                <ul>
+                    <li><a href="contact.htm">Contact</a></li>
+                    <li><a href="shop.htm">Shop</a></li>
+                    <li><a href="tournament.htm">Tournament</a></li>
+                    <li><a href="lures.htm" class="current">Lures</a></li>
+                    <li><a href="Index.htm" >Home</a></li>
+                    
+                </ul>
+        </nav> 
+        </div>
+        <main>
+            <div class="lurelist">
+            <ol>
+               <li>Rapala </li>
+               <p>The rapala is a great lure for almost every spieices of fish. Bass love the rapala but you can also catch Muskie and Northern.</p>
+               <li>Johnsons Silver Minnow</li>
+               <p>The J minnow is a great lure for catchinf smaller fish such as bluegill, trout, and panfish.</p>
+                <li>magic bait </li>
+                <p>If you are looking to catch cat fish, Magic bait is the way to go. It is excellent for night time catfish.</p>
+                <li>Wacky worm</li>
+                <p>The wacky worm is mainly used to catch large or small mouth bass.The wacky worm is an excellent bait. </p>
+            </ol>
+                   
+
+            <img src="rapala.jpg" >
+            <img src="Johnson_Silver_Minnow.jpg" >
+            <img src="magicbait.jpg"  >
+            <img src="wacky-worm.jpg">
+           
+        </div>
+        
+        <div class="external">
+            <p>Any Other questions you may have we reccomend visiting the field and stream site linked below. This website has more lures unique to the exact fish you may want to catch.</p>
+            <a href="https://www.fieldandstream.com/photos/gallery/fishing/bass/2006/04/50-greatest-lures-all-time/" target="_blank">Read More</a>
+            <p></p>
+        </div>
+        </main>
+        <footer>
+             <p> &copy; Copyright 2021 Turville's Fishing and Tackle.</p><!--use of copyright entitie-->
+        </footer>
+
+    </body>
+</html>

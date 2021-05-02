@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <!-- 
+    *****************************************************************************
+    Title: Turville's Fishing and Tackle
+    Use: This is the contact page for Turville's fishing and tackle
+    Author: Matthew Turville
+    School/Term: Southern Illinois University, Spring 2021
+    Developed: April 19th, 2020
+    Tested: April 23, 2021; Passed on Safari and Chrome browsers.
+    ******************************************************************************
+    -->
+       <link rel="stylesheet" href="">
+        <meta charset="utf-8">
+        <title>Turville's fishing and Tackle</title>
+          <meta charset="utf-8">
+        <meta name="description" content="The Turville's fishing and tackle website is a great place to learn and shop for outstanding lures.">
+        <meta name="keywords" content="fishng, lures, bass, walleye, bluegill, fishing poles">
+        <!--favicon image-->
+		<link rel="shortcut icon" href="Favicon.png"> <!--This is my Favicon-->
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="slicknav.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    	<script src="jquery.slicknav.min.js"></script>
+     <script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    	</script>
+       <!--allows screen to size with devices-->
+       <meta name="viewport" content="width=device-width, intial-scale=1">
+       
+    </head>
+    <body>
+       
+        <div class="top">
+        <img src="Favicon.png" width="10%">
+        <h1>Turville's Fishing and Tackle</h1>
+                <nav id="mobilemenu"></nav>
+             <nav id="nav_menu">
+                <ul>
+                    <li><a href="contact.htm" class="current">Contact</a></li>
+                    <li><a href="shop.htm">Shop</a></li>
+                    <li><a href="tournament.htm">Tournament</a></li>
+                    <li><a href="lures.htm">Lures</a></li>
+                    <li><a href="Index.htm">Home</a></li>
+                    
+                </ul>
+        </nav> 
+        </div>
+        <main>
+           <div class="contactform">
+             <h2>Get in touch by completing the information below:</h2> 
+             <form action="response.htm" method="post" name="contact" id="contact">
+                 
+                    <Label for="name">Full name:</Label><br>
+                    <input type="text" name="name" id="name" minlength="15" maxlength="25" autofocus required placeholder="Enter full name" ><br> 
+                    <Label for="email">Email:</Label><br>
+                    <input type="email" name="email" id="email"minlength="10" maxlength="25" required  placeholder="Enter Email"><br>
+                    <Label for="phone">Phone Number:</Label><br>
+                    <input type="tel" id="phone"pattern="\d{3}[\-]\d{3}[\-]\d{4}"required  placeholder="xxx-xxx-xxxx"><br>
+                    <label>
+                    Date:&nbsp;&nbsp;</label><br>
+                    <input type="date" name="date" required><br>
+                
+                <label>Message</label><br>
+                <textarea name="Message" id="Message" minlength="20" maxlength="200" required placeholder="Enter your message here"></textarea><br>
+                
+                <div id="button">
+                   <input type="submit" id="submit" value="submit">
+                    <input type="reset" id="reset" value="reset">
+                    <p></p>
+                 </div>  
+                    
+            
+                    
+                 
+             </form>
+           </div>
+           <div class="questions">
+               <h3>Frequently asked questions</h3>
+               <p>Q: How do I sign up for the fishing tournament?</p>
+               <p>A: Complete the contact form and add tournament to the message.</p>
+               <p>Q:How much is the tournament?</p>
+               <p>A: $15 dollars per person.</p>
+               <p>Q:Where is your busniess located?</p>
+               <p>A: We are located in southern florida.</p>
+           </div>
+           
+            
+        </main>
+        <footer>
+            <p> &copy; Copyright 2021 Turville's Fishing and Tackle.</p><!--use of copyright entitie-->
+        </footer>
+
+    </body>
+</html>

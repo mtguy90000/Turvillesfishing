@@ -1,0 +1,474 @@
+/********************General format for each page*/
+body{
+    height: 550px;
+    width: 90%;
+    margin-top: 4%;
+    margin-left: 5%;
+    border: 3px solid black;
+    background-color: white;
+    box-shadow: 3px 3px 10px 2px ;
+    min-width: 550px;
+    
+}
+html{
+    background-color: #e7e7e7
+}
+.top{
+    border: 2px solid black;
+    border-bottom:4px solid black;
+    box-shadow: 6px 3px 10px 2px;
+    background-color: lightblue
+}
+.top img{
+    float: left;
+    max-height: 90px;
+    
+}
+.top h1{
+    margin-left: 10%
+}
+main{
+    margin-top: 49px;
+    height: 350px;
+    display: flex;
+    border-top: 1px solid #d3d3d3;
+}
+footer{
+    height: 66px;
+    border-top: 1px solid #d3d3d3;
+    margin-top: 27px;
+    text-align: center
+}
+
+
+/*naviagtion menu styling*/
+#nav_menu ul
+{
+    list-style-type: none;
+    
+    
+}
+
+#nav_menu ul li
+{
+    float: right;
+    width: 100px
+    
+}
+#nav_menu ul li a
+{
+    
+    text-align: center;
+    display: block;
+    /*width remains pixels because the style looks better when page is smaller*/
+    width: 6em;
+    padding: .4em 0;
+    text-decoration: none;
+    background-color: #abe1ff;
+    color: black;
+    font-weight: bold;
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px 2px #706e66;
+    
+}
+    
+
+#nav_menu ul li a.current{background-color: #05aff4;
+border: }
+#nav_menu ul li a:hover, #nav_menu ul li a:focus{
+    background-color:  #05aff4;} 
+
+
+
+/*index page css*/
+.description p{
+    text-align: center;
+    margin-bottom: 39px;
+    min-width: 350px;
+}
+.list{
+    flex-basis: 30%;
+       background-color: #abe1ff;
+    border: 3px solid black;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 10px;
+    box-shadow: 5px 4px 5px 1px #706e66;
+}
+.list ol{
+  margin-bottom: 44px;
+    min-width: 160px;
+}
+.description{
+    flex-basis: 30%;
+         background-color: #abe1ff;
+    border: 3px solid black;
+    height: 250px;
+    margin-top: 20px;
+    box-shadow: 5px 4px 5px 1px #706e66;
+    
+}
+.p_homepage{
+    flex-basis: 32%;
+    margin-top: 20px;
+    margin-left: 25px;
+    
+}
+.homephoto{
+    width: 100%;
+    height: 334px;
+    border: 4px solid black;
+    box-shadow: 5px 4px 5px 1px #706e66;
+}
+/*buttons*/
+.list a, .video a, .external a{
+    background-color: lightcoral;
+    color: white;
+    font-size: 30px;
+    border: 2px solid black;
+    margin-left: 30%;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    box-shadow: 5px 4px 5px 1px #706e66;
+    
+}
+.list a:hover, .description a:hover, .video a:hover, .external a:hover{
+    background-color: #05aff4;
+    color: white;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+.description a{
+    background-color: lightcoral;
+    color: white;
+    font-size: 30px;
+    border: 2px solid black;
+    margin-left: 30%;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    box-shadow: 5px 4px 5px 1px #706e66;
+
+    
+}
+/*lures page*/
+.lurelist{
+    flex-basis: 50%;
+    background-color: #abe1ff;
+    height: 375px;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 10px 2px #706e66;
+    
+    
+}
+.lurelist ol p{
+    margin-top: 1px;
+    min-width: 450px
+}
+.lurelist img{
+    width: 15%;
+    height: 70px;
+    margin-left: 30px;
+    border: 1px solid black;
+    
+}
+.external{
+    flex-basis: 40%;
+    margin-left: 35px;
+    background-color: deepskyblue;
+    height: 375px;
+     border-radius: 10px 10px 10px 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 10px 2px #706e66;
+    
+}
+.external p{
+    margin-bottom: 100px;
+}
+.external a{
+    margin-left: 35%;
+    
+}
+
+
+
+/*tournament page*/
+.table{
+    flex-basis: 50%;
+    background-color:  #abe1ff;
+    border: 5px solid black;
+    margin-left: 2%;
+    margin-top: 2%;
+    box-shadow: 5px 4px 5px 1px #706e66;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 3px solid black;
+    
+}
+thead {
+    background-color: lawngreen;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    
+    
+}
+th, td {
+    padding: .2em 1em;
+    text-align: center;
+    border-right: 3px solid black;
+    border-bottom: 1px solid black;
+   
+		}
+th:first-child, td:first-child {text-align: left;}
+
+th:nth-child(2), td:nth-child(2) {
+			text-align: left;}
+th:nth-child(3), td:nth-child(3) {
+			text-align: center;}
+th:nth-child(4), td:nth-child(4) {
+			text-align: center;}
+.table p{
+    margin-top: 60px;
+    border: 1px solid black;
+    background-color: lawngreen;
+    width: 60%;
+    margin-left: 20%
+}
+.video{
+    flex-basis: 43%;
+    background-color: #abe1ff;
+    margin-top: 2%;
+    margin-left: 2%;
+    border: 4px solid black;
+    box-shadow: 5px 4px 5px 1px #706e66;
+}
+#videoplayer{
+    width: 100%;
+    height: 80%;
+    
+}
+.video a{
+    margin-left: 35%;
+}
+
+/*shop page*/
+
+
+.tshirt img,.poles img,.lure img,.pole img,.extra img{
+    width: 40%;
+    height: 70px;
+    
+    border: 1px solid black
+    
+}  
+.tshirt p,.lure p,.extra p,.pole p{
+    margin-top: 2px
+}
+    
+
+.tshirt,.lure,.pole,.extra{
+    flex-basis: 25%;
+    padding-left: 5%;
+    background-color: #abe1ff;
+    margin-top: 30px;
+    border: 1px solid black;
+    
+}
+
+
+/*contact page css*/
+.contactform{
+    flex-basis: 80%;
+    background-color: #abe1ff;
+    border: 3px solid black;
+    border-radius: 6px 6px 6px 6px;
+    margin-left: 6px; 
+    box-shadow: 5px 4px 5px 1px #706e66;
+}
+.questions{
+    flex-basis: 70%;
+    background-color: aqua;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 5px 4px 5px 1px #706e66;
+}
+.questions h3, .contactform h2{
+    text-align: center;
+}
+
+
+.contactform h2{
+    font-size: 20px;
+}
+label{
+    margin-left: 5px;
+}
+input,#Message{
+    width: 70%;
+    margin-left: 5px;
+    box-shadow: 1px 1px 0px 1px ;
+    border: 1px solid black;
+    
+}
+#submit{
+    width: 40%;
+    float: left;
+    background-color: aqua;
+    box-shadow: 1px 1px 10px 1px ;
+}
+#reset{
+    width: 40%;
+    background-color: aqua;
+    box-shadow: 1px 1px 10px 1px ;
+    
+}
+
+
+
+/*media data*/
+#mobilemenu{
+    display: none;
+}
+@media only screen and (max-width: 850px){
+main{
+    flex-direction: column}
+    body{
+        height: 800px;}
+    
+    /*index page*/
+    .list{
+        margin: 5%;
+        width: 90%;
+        min-width: 0px;
+        height: 400px
+        
+    }
+    .description{
+           margin: 5%;
+        width: 90%;
+        min-width: 0px;
+    }
+    .p_homepage{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .list a{
+        margin-bottom:px;
+    }
+    
+    /*tournament page*/
+    .table, .video{
+        margin-left: 0%;
+        height: 300px;
+    }
+    /*lures page*/
+    
+    .external{
+        margin-left: 2%;
+        margin-top: 4%;
+        width: 95%;
+        height: 200px;
+    }
+    .lurelist{
+        margin-left: 2%;
+        width: 95%;
+    }
+    
+   
+    
+    /*shop page*/
+    .tshirt p,.lure p,.extra p,.pole p{
+       float: left;
+        
+    }
+    .tshirt img,.lure img,.pole img,.extra img
+    {
+        width:10%;
+
+        float: left;
+        
+    }
+    .lure br,.tshirt br,.pole br{
+        display: none;
+    }
+    
+    /*contact page*/
+    .questions{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    .contactform{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2%;
+        
+    }
+}
+    
+    /*at 750 px switch to mobile menu*/
+@media only screen and (max-width:750px){
+    #nav_menu{display: none;
+    }
+    #mobilemenu{display: block;
+        width: 100%;
+    }
+    main{
+        width 100%;
+        
+    }
+    body{
+        width 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+        height: 980px;
+        border: 3px solid black;
+        border-radius: none;
+     }
+   
+    
+    .external a{
+        margin-bottom: 10px;
+    }
+    /*contact page*/
+    .contactform{
+      width: 99%;
+    margin-left: 0px;
+    
+    }
+    .contactform input,textarea{
+        width: 97%;
+        height: 50px
+     }
+    #button{
+        text-align: center;
+        margin-left: 10%;
+        
+    }
+    .questions{
+        width: 98%;
+        margin-left: 0%;
+        
+    }
+
+
+
+    
+ }
+    
+@media only screen and (max-width:479px)
+{
+    #nav_menu{display: none;}
+    #mobilemenu{display: block;}
+    
+}
+    
